@@ -1,0 +1,18 @@
+<div class="beers-container">
+
+    {{#each beers}}
+    {{!-- <div class="row"> --}}
+    <div class="product-container">
+        <img class="product-img" src="{{this.image_url}}" alt="{{this.name}}">
+        
+        <div class="info-box">
+            Link: <a href="/getBeer?id={{this.id}}">{{this.name}}</a>
+            <h1 class="product-name">{{this.name}}</h1>
+            <p class="product-tagline">{{this.tagline}}</p>
+            <p class="product-description">{{this.description}}</p>
+        </div>
+    </div>
+    {{/each}}
+
+</div>
+
